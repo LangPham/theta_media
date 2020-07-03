@@ -22,4 +22,7 @@ defmodule ThetaMedia.Dir do
 		base
 	end
 
+	def mkdir(%Base{} = base, string) do
+		File.mkdir(Path.join(base.base, string))
+	end
 end
