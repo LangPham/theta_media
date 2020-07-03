@@ -1,6 +1,6 @@
 defmodule ThetaMedia.Dir do
 	alias ThetaMedia.Base
-	def list() do
+	def ls() do
 		store = Application.get_env(:theta_media, :storage)
 		base = Base.new()
 		base = put_in(base.base, store)
@@ -12,7 +12,7 @@ defmodule ThetaMedia.Dir do
 		base
 	end
 
-	def list(%Base{} = base) do
+	def ls(%Base{} = base) do
 		store = base.base
 		list = File.ls!(store)
 		dirs = Enum.filter(list, fn (x) -> File.stat!(Path.join(store, x)).type == :directory end)
