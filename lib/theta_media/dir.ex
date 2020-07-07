@@ -21,7 +21,7 @@ defmodule ThetaMedia.Dir do
 		base = put_in(base.dirs, dirs)
 		files = Enum.filter(list, fn (x) -> File.stat!(Path.join(store, x)).type != :directory end)
 		base = put_in(base.files, files)
-		list = Path.split(base)
+		list = Path.split(store)
 		list_url = Enum.drop(list, base.root-1)
 		url = Path.join(list_url)
 		base = put_in(base.url, url)

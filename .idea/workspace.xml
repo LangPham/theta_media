@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e81d633-ff08-49be-99bf-c21a3f0d348e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/theta_media/base.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/theta_media/base.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/theta_media/dir.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/theta_media/dir.ex" afterDir="false" />
-    </list>
+    <list default="true" id="9e81d633-ff08-49be-99bf-c21a3f0d348e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +70,7 @@
       <workItem from="1593604818861" duration="238000" />
       <workItem from="1593747058468" duration="2665000" />
       <workItem from="1593999315227" duration="1084000" />
-      <workItem from="1594025393639" duration="5666000" />
+      <workItem from="1594025393639" duration="6266000" />
     </task>
     <servers />
   </component>
@@ -102,10 +98,10 @@
       <screen x="0" y="23" width="1920" height="977" />
     </state>
     <state x="756" y="415" key="Github.ShareDialog/0.23.1920.977@0.23.1920.977" timestamp="1593516067916" />
-    <state x="311" y="251" key="Vcs.Push.Dialog.v2" timestamp="1593750516228">
+    <state x="311" y="251" key="Vcs.Push.Dialog.v2" timestamp="1594105880886">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state x="311" y="251" key="Vcs.Push.Dialog.v2/0.23.1920.977@0.23.1920.977" timestamp="1593750516228" />
+    <state x="311" y="251" key="Vcs.Push.Dialog.v2/0.23.1920.977@0.23.1920.977" timestamp="1594105880886" />
     <state x="825" y="413" key="git4idea.ui.GitResetDialog" timestamp="1593604831668">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
