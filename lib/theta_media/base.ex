@@ -1,11 +1,13 @@
 defmodule ThetaMedia.Base do
 	@moduledoc """
-	  base: "uploads"
-		root: 0
+	  base: "/Users/uploads"
+		url: "uploads"
+		root: 3
 	  dirs: [dirA,dirB]
 	  files: [file1, file2]
 	"""
 	defstruct base: "",
+						url: "",
 	          root: 1,
 	          dirs: [],
 	          files: []
@@ -17,8 +19,9 @@ defmodule ThetaMedia.Base do
 
 	    iex> new()
 	    %ThetaMedia.Base{
-	      base: "uploads"
-				root: 1
+	      base: "/User/uploads"
+				url: "uploads"
+				root: 3
 	      dirs: []
 	      files: []
 	    }
@@ -26,9 +29,12 @@ defmodule ThetaMedia.Base do
 	def new() do
 		store = Application.get_env(:theta_media, :storage)
 		IO.inspect store
-		IO.inspect Path.split(store)
+		list Path.split(store)
 		root = Enum.count(Path.split(store))
 		IO.inspect root
+		#		list = Path.split(dir)
+		#		list = Enum.drop(list, pwd.root-1)
+		#		folder = Path.join(list)
 		this = put_in(%__MODULE__{}.root, root)
 		put_in(this.base, store)
 	end
@@ -44,6 +50,7 @@ defmodule ThetaMedia.Base do
 				root: 1
 	      dirs: []
 	      files: []
+				url: ""
 	    }
 	"""
 	def into(%__MODULE__{} = base, string) do
@@ -58,15 +65,17 @@ defmodule ThetaMedia.Base do
 
 	## Examples
 			base = %ThetaMedia.Base{
-	      base: "uploads/string"
-				root: 1
+	      base: "/User/uploads/string"
+				url: "uploads/string"
+				root: 3
 	      dirs: []
 	      files: []
 	    }
 
 	    iex> outgo(base)
 	    %ThetaMedia.Base{
-	      base: "uploads"
+	      base: "/User/uploads"
+				url: "uploads"
 				root: 1
 	      dirs: []
 	      files: []
