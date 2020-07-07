@@ -6,10 +6,10 @@ defmodule ThetaMedia.Dir do
 		base = put_in(base.base, store)
 		list = File.ls!(store)
 		dirs = Enum.filter(list, fn (x) -> File.stat!(Path.join(store, x)).type == :directory end)
-		base = put_in(base.dirs, dirs)
+		base = put_in(base.dirs, Enum.sort(dirs))
 		files = Enum.filter(list, fn (x) -> File.stat!(Path.join(store, x)).type != :directory end)
 		url = List.last(Path.split(base))
-		base = put_in(base.files, files)
+		base = put_in(base.files, Enum.sort(files))
 		base = put_in(base.url, url)
 		base
 	end
@@ -18,9 +18,9 @@ defmodule ThetaMedia.Dir do
 		store = base.base
 		list = File.ls!(store)
 		dirs = Enum.filter(list, fn (x) -> File.stat!(Path.join(store, x)).type == :directory end)
-		base = put_in(base.dirs, dirs)
+		base = put_in(base.dirs, Enum.sort(dirs))
 		files = Enum.filter(list, fn (x) -> File.stat!(Path.join(store, x)).type != :directory end)
-		base = put_in(base.files, files)
+		base = put_in(base.files, Enum.sort(files))
 		list = Path.split(store)
 		list_url = Enum.drop(list, base.root-1)
 		url = Path.join(list_url)
