@@ -29,14 +29,15 @@ defmodule ThetaMedia.Base do
 	def new() do
 		store = Application.get_env(:theta_media, :storage)
 		IO.inspect store
-		list Path.split(store)
+		list = Path.split(store)
 		root = Enum.count(Path.split(store))
 		IO.inspect root
 		#		list = Path.split(dir)
 		#		list = Enum.drop(list, pwd.root-1)
 		#		folder = Path.join(list)
 		this = put_in(%__MODULE__{}.root, root)
-		put_in(this.base, store)
+		this = put_in(this.base, store)
+		put_in(this.url, List.last(list))
 	end
 
 	@doc """
