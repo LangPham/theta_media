@@ -1,11 +1,13 @@
 defmodule ThetaMedia.MixProject do
   use Mix.Project
 
+  @version "0.1.0"
   def project do
     [
       app: :theta_media,
-      version: "0.1.0",
-      elixir: "~> 1.10",
+      name: "Theta Media",
+      version: @version,
+      elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
       description: description(),
       package: package(),
@@ -23,11 +25,10 @@ defmodule ThetaMedia.MixProject do
       files: ["lib", "mix.exs", "README*", "LICENSE*"],
       maintainers: ["LangPham"],
       licenses: ["MIT"],
-#      links: %{"GitHub" => "https://github.com/kkempin/exiban"}
+      links: %{"GitHub" => "https://github.com/LangPham/theta_media.git"}
     ]
   end
 
-  # Run "mix help compile.app" to learn about applications.
   def application do
     [
       extra_applications: [:logger]

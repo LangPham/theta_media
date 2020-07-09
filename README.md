@@ -1,6 +1,6 @@
 # ThetaMedia
 
-**TODO: Add description**
+> ThetaMedia lazily traverses one or more directory trees, depth first, returning successive file names. 
 
 ## Installation
 

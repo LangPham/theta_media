@@ -7,7 +7,7 @@ defmodule ThetaMedia.Base do
 	  files: [file1, file2]
 	"""
 	defstruct base: "",
-						url: "",
+	          url: "",
 	          root: 1,
 	          dirs: [],
 	          files: []
@@ -28,13 +28,8 @@ defmodule ThetaMedia.Base do
 	"""
 	def new() do
 		store = Application.get_env(:theta_media, :storage)
-		IO.inspect store
 		list = Path.split(store)
 		root = Enum.count(Path.split(store))
-		IO.inspect root
-		#		list = Path.split(dir)
-		#		list = Enum.drop(list, pwd.root-1)
-		#		folder = Path.join(list)
 		this = put_in(%__MODULE__{}.root, root)
 		this = put_in(this.base, store)
 		put_in(this.url, List.last(list))
@@ -55,10 +50,7 @@ defmodule ThetaMedia.Base do
 	    }
 	"""
 	def into(%__MODULE__{} = base, string) do
-		IO.inspect string, label: "String:\n"
-		IO.inspect base.base, label: "Base:\n"
-		path = base.base
-		base = put_in(base.base, Path.join(base.base, string))
+		put_in(base.base, Path.join(base.base, string))
 	end
 
 	@doc """
@@ -84,16 +76,12 @@ defmodule ThetaMedia.Base do
 	"""
 	def outgo(%__MODULE__{} = base) do
 		list = Path.split(base.base)
-		{_,list_new} =
+		{_, list_new} =
 			if Enum.count(list) > base.root do
 				List.pop_at(list, -1)
 			else
-				{ nil,list}
+				{nil, list}
 			end
-
-		#		IO.inspect base.base, label: "Base:\n"
-		#		path = base.base
 		put_in(base.base, Path.join(list_new))
 	end
-
 end
