@@ -22,7 +22,7 @@ defmodule ThetaMedia.MixProject do
   end
   defp package do
     [
-      files: ["lib", "mix.exs", "README*", "LICENSE*"],
+      files: ~w(lib mix.exs README LICENSE .formatter.exs),
       maintainers: ["LangPham"],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/LangPham/theta_media.git"}

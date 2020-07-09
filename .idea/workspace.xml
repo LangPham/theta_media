@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e81d633-ff08-49be-99bf-c21a3f0d348e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.formatter.exs" beforeDir="false" afterPath="$PROJECT_DIR$/.formatter.exs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/theta_media/base.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/theta_media/base.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mix.exs" beforeDir="false" afterPath="$PROJECT_DIR$/mix.exs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +36,12 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1e25cjH4xkLzuDjRIDRwW3LWceg" />
@@ -78,7 +83,7 @@
       <workItem from="1593999315227" duration="1084000" />
       <workItem from="1594025393639" duration="7553000" />
       <workItem from="1594117979733" duration="133000" />
-      <workItem from="1594259022102" duration="1764000" />
+      <workItem from="1594259022102" duration="2690000" />
     </task>
     <servers />
   </component>
@@ -110,10 +115,10 @@
       <screen x="0" y="23" width="1920" height="977" />
     </state>
     <state x="756" y="415" key="Github.ShareDialog/0.23.1920.977@0.23.1920.977" timestamp="1593516067916" />
-    <state x="311" y="251" key="Vcs.Push.Dialog.v2" timestamp="1594118104457">
+    <state x="311" y="251" key="Vcs.Push.Dialog.v2" timestamp="1594261010123">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state x="311" y="251" key="Vcs.Push.Dialog.v2/0.23.1920.977@0.23.1920.977" timestamp="1594118104457" />
+    <state x="311" y="251" key="Vcs.Push.Dialog.v2/0.23.1920.977@0.23.1920.977" timestamp="1594261010123" />
     <state x="825" y="413" key="git4idea.ui.GitResetDialog" timestamp="1593604831668">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
